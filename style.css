@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    background-color: white;    
+    transition: background-color 1s;
+}
+
+#theme-toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+#theme-icon{
+    height: 40px;
+    width: 40px;
+    display: block;
+}
+
+
+#card{
+    padding: 20px;
+    background-color: rgb(195, 195, 195);
+    border: 1px solid #444;
+    border-radius: 30px;
+}
+
+#speed{
+    color: black;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.dark-mode{
+    background-color: black;
+}
+
+.dark-mode #card{
+    background-color: #1a1a1a;
+}
+
+.dark-mode #speed{
+    color: white;
+}
+
+.dark-mode #theme-icon{
+    filter: invert(1);
+}
+
+#clickBtn{
+    padding: 15px 30px;
+    font-size: 24px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#clickBtn:disabled{
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+#startBtn{
+    padding: 15px 30px;
+    font-size: 24px;
+    margin-top: 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#startBtn:disabled{
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+#timer,#result{
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
